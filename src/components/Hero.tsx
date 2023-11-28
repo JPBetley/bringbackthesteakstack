@@ -53,7 +53,7 @@ export function Hero() {
               Bring Back the Steak Stack
             </h1>
             <p className="mt-4 text-3xl text-slate-600">
-              Taco Bell, it's time. Do the right thing and restore
+              Taco Bell, it&apos;s time. Do the right thing and restore
               your greatest creation to glory.
             </p>
 
