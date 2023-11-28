@@ -10,7 +10,7 @@ import { Screencasts } from '@/components/Screencasts'
 import { TableOfContents } from '@/components/TableOfContents'
 import { Testimonial } from '@/components/Testimonial'
 import { Testimonials } from '@/components/Testimonials'
-import avatarImage1 from '@/images/avatars/avatar-1.png'
+import avatarImage1 from '@/images/avatars/me.jpg'
 import avatarImage2 from '@/images/avatars/avatar-2.png'
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
       <Hero />
       <Introduction />
       <NavBar />
-      <TableOfContents />
+      {/*<TableOfContents />*/}
       <Testimonial
         id="testimonial-from-phil-betley"
         author={{
@@ -29,29 +29,29 @@ export default function Home() {
         }}
       >
         <p>
-          “I didn’t know a thing about icon design until I read this book. Now I
-          can create any icon I need in no time. Great resource!”
+          “People ask what one would do for a Klondike Bar.
+            I’m ashamed of what I’ve done for a steak stack.”
         </p>
       </Testimonial>
-      <Screencasts />
-      <Testimonial
-        id="testimonial-from-gerardo-stark"
-        author={{
-          name: 'Gerardo Stark',
-          role: 'Creator of Pandemicons',
-          image: avatarImage2,
-        }}
-      >
-        <p>
-          “I’ve tried to create my own icons in the past but quickly got
-          frustrated and gave up. Now I sell my own custom icon sets online.”
-        </p>
-      </Testimonial>
-      <Resources />
-      <FreeChapters />
-      <Pricing />
-      <Testimonials />
-      <Author />
+      {/*<Screencasts />*/}
+      {/*<Testimonial*/}
+      {/*  id="testimonial-from-gerardo-stark"*/}
+      {/*  author={{*/}
+      {/*    name: 'Gerardo Stark',*/}
+      {/*    role: 'Creator of Pandemicons',*/}
+      {/*    image: avatarImage2,*/}
+      {/*  }}*/}
+      {/*>*/}
+      {/*  <p>*/}
+      {/*    “I’ve tried to create my own icons in the past but quickly got*/}
+      {/*    frustrated and gave up. Now I sell my own custom icon sets online.”*/}
+      {/*  </p>*/}
+      {/*</Testimonial>*/}
+      {/*<Resources />*/}
+      {/*<FreeChapters />*/}
+      {/*<Pricing />*/}
+      {/*<Testimonials />*/}
+      {/*<Author />*/}
       <Footer />
     </>
   )
