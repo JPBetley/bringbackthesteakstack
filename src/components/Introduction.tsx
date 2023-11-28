@@ -30,25 +30,25 @@ export function Introduction() {
           We humble fans are asking Taco Bell to Three-peat the Triple-Steak Stack.
           If it was good enough for Jordan, it&apos;s good enough for the Bell. Live Más.
         </p>
-        <ul role="list" className="mt-8 space-y-3">
-          {[
-            'Using boolean operations to combine basic shapes into complex icons',
-            'How to adapt icons to different sizes',
-            'Translating icons from an outline style to a solid style',
-            'Identifying the characteristics that make an icon set cohesive',
-            'Figma features and keyboard shortcuts to speed up your workflow',
-          ].map((feature) => (
-            <li key={feature} className="flex">
-              <CheckIcon className="h-8 w-8 flex-none fill-blue-500" />
-              <span className="ml-4">{feature}</span>
-            </li>
-          ))}
-        </ul>
-        <p className="mt-8">
-          By the end of the book, you&apos;ll have all the confidence you need to dig
-          in and start creating beautiful icons that can hold their own against
-          any of the sets you can find online.
-        </p>
+        {/*<ul role="list" className="mt-8 space-y-3">*/}
+        {/*  {[*/}
+        {/*    'Using boolean operations to combine basic shapes into complex icons',*/}
+        {/*    'How to adapt icons to different sizes',*/}
+        {/*    'Translating icons from an outline style to a solid style',*/}
+        {/*    'Identifying the characteristics that make an icon set cohesive',*/}
+        {/*    'Figma features and keyboard shortcuts to speed up your workflow',*/}
+        {/*  ].map((feature) => (*/}
+        {/*    <li key={feature} className="flex">*/}
+        {/*      <CheckIcon className="h-8 w-8 flex-none fill-blue-500" />*/}
+        {/*      <span className="ml-4">{feature}</span>*/}
+        {/*    </li>*/}
+        {/*  ))}*/}
+        {/*</ul>*/}
+        {/*<p className="mt-8">*/}
+        {/*  By the end of the book, you&apos;ll have all the confidence you need to dig*/}
+        {/*  in and start creating beautiful icons that can hold their own against*/}
+        {/*  any of the sets you can find online.*/}
+        {/*</p>*/}
         {/*<p className="mt-10">*/}
         {/*  <Link*/}
         {/*    href="#free-chapters"*/}
