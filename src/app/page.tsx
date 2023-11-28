@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <Hero />
       <Introduction />
-      <NavBar />
+      {/*<NavBar />*/}
       {/*<TableOfContents />*/}
       <Testimonial
         id="testimonial-from-phil-betley"
