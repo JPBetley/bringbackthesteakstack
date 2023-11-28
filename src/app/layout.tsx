@@ -11,9 +11,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Everything Starts as a Square - Get lost in the world of icon design',
+  title: 'Bring Back the Steak Stack',
   description:
-    'A book and video course that teaches you how to design your own icons from scratch.',
+    'Taco Bell, it\'s time. Bring Back the Steak Stack.',
 }
 
 export default function RootLayout({
