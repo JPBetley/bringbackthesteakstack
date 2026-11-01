@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { Popover } from '@headlessui/react'
+import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
 import clsx from 'clsx'
 
 const sections = [
@@ -44,7 +44,7 @@ function MenuIcon({
 }
 
 export function NavBar() {
-  let navBarRef = useRef<React.ElementRef<'div'>>(null)
+  let navBarRef = useRef<React.ComponentRef<'div'>>(null)
   let [activeIndex, setActiveIndex] = useState<number | null>(null)
   let mobileActiveIndex = activeIndex === null ? 0 : activeIndex
 
@@ -100,7 +100,7 @@ export function NavBar() {
               className={clsx(
                 'relative flex items-center px-4 py-3',
                 !open &&
-                  'bg-white/95 shadow-sm [@supports(backdrop-filter:blur(0))]:bg-white/80 [@supports(backdrop-filter:blur(0))]:backdrop-blur',
+                  'bg-white/95 shadow-sm [@supports(backdrop-filter:blur(0))]:bg-white/80 [@supports(backdrop-filter:blur(0))]:backdrop-blur-sm',
               )}
             >
               {!open && (
@@ -116,7 +116,7 @@ export function NavBar() {
                   </span>
                 </>
               )}
-              <Popover.Button
+              <PopoverButton
                 className={clsx(
                   '-mr-1 ml-auto flex h-8 w-8 items-center justify-center',
                   open && 'relative z-10',
@@ -130,11 +130,11 @@ export function NavBar() {
                   </>
                 )}
                 <MenuIcon open={open} className="h-6 w-6 stroke-slate-700" />
-              </Popover.Button>
+              </PopoverButton>
             </div>
-            <Popover.Panel className="absolute inset-x-0 top-0 bg-white/95 py-3.5 shadow-sm [@supports(backdrop-filter:blur(0))]:bg-white/80 [@supports(backdrop-filter:blur(0))]:backdrop-blur">
+            <PopoverPanel className="absolute inset-x-0 top-0 bg-white/95 py-3.5 shadow-sm [@supports(backdrop-filter:blur(0))]:bg-white/80 [@supports(backdrop-filter:blur(0))]:backdrop-blur-sm">
               {sections.map((section, sectionIndex) => (
-                <Popover.Button
+                <PopoverButton
                   as="a"
                   key={section.id}
                   href={`#${section.id}`}
@@ -149,14 +149,14 @@ export function NavBar() {
                   <span className="ml-4 text-base font-medium text-slate-900">
                     {section.title}
                   </span>
-                </Popover.Button>
+                </PopoverButton>
               ))}
-            </Popover.Panel>
+            </PopoverPanel>
             <div className="absolute inset-x-0 bottom-full z-10 h-4 bg-white" />
           </>
         )}
       </Popover>
-      <div className="hidden sm:flex sm:h-32 sm:justify-center sm:border-b sm:border-slate-200 sm:bg-white/95 sm:[@supports(backdrop-filter:blur(0))]:bg-white/80 sm:[@supports(backdrop-filter:blur(0))]:backdrop-blur">
+      <div className="hidden sm:flex sm:h-32 sm:justify-center sm:border-b sm:border-slate-200 sm:bg-white/95 sm:[@supports(backdrop-filter:blur(0))]:bg-white/80 sm:[@supports(backdrop-filter:blur(0))]:backdrop-blur-sm">
         <ol
           role="list"
           className="mb-[-2px] grid auto-cols-[minmax(0,15rem)] grid-flow-col text-base font-medium text-slate-900 [counter-reset:section]"

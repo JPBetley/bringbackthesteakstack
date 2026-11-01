@@ -12,8 +12,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'Bring Back the Steak Stack',
-  description:
-    'Taco Bell, it\'s time. Bring Back the Steak Stack.',
+  description: "Taco Bell, it's time. Bring Back the Steak Stack.",
 }
 
 export default function RootLayout({

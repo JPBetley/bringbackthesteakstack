@@ -29,8 +29,8 @@ export default function Home() {
         }}
       >
         <p>
-          “People ask what one would do for a Klondike Bar.
-            I’m ashamed of what I’ve done for a steak stack.”
+          “People ask what one would do for a Klondike Bar. I’m ashamed of what
+          I’ve done for a steak stack.”
         </p>
       </Testimonial>
       {/*<Screencasts />*/}
